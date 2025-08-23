@@ -37,7 +37,7 @@ let posts=[
 
 // create index.ejs file in views folder and pass data to index.ejs 
 // code to pass the posts data to index.ejs 
-app.get("/posts", (req,res)=>{
+app.get("/", (req,res)=>{
     res.render("index.ejs",{posts: posts});
 });
 // post in above code is used so that posts go to index.ejs file [Note point]
@@ -68,7 +68,7 @@ app.post("/posts", (req,res)=>{
     console.log(`${username} This is username ${content} and id is ${id}`);
 
     // redirect your page to /posts site 
-    res.redirect("/posts");
+    res.redirect("/");
 });
 
 // get details using ID;
@@ -102,7 +102,7 @@ app.patch("/posts/:id", (req,res)=>{
     let post = posts.find((p) => id===p.id);
     console.log(post);
     post.content = newContent;
-    res.redirect("/posts");
+    res.redirect("/");
    
 });
 
@@ -114,7 +114,7 @@ app.delete("/posts/:id", (req,res)=>{
 //    filter function is use to create an array of defined condition , all post goes in posts whose id not equal to 
 // url id 
    posts=posts.filter((p)=>id !== p.id);
-   res.redirect("/posts");
+   res.redirect("/");
 });
 
 app.listen(port, ()=>{

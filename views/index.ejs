@@ -21,13 +21,12 @@
           </div>
 
           <div class="btns">
-            <div class="left-btns">
-                <a href="http://localhost:8080/posts/<%=post.id%>" class="see">see is detail</a>
-                <a href="http://localhost:8080/posts/<%=post.id%>/edit" class="edit_">edit</a>
+              <div class="left-btns">
+                <a href="/posts/<%= post.id %>">see in detail</a>
+                <a href="/posts/<%= post.id %>/edit">edit</a>
               </div>
-
-              <form method="post" action="/posts/<%=post.id%>?_method=DELETE"> 
-                <button class="delete_style">Delete</button>
+              <form method="post" action="/posts/<%= post.id %>?_method=DELETE"> 
+                  <button class="delete_style">Delete</button>
               </form>
             </div>
         </div>
@@ -37,7 +36,7 @@
     <!-- this achore tag redirect your page to /posts/new  -->
     <br>
     <br>
-    <a href="http://localhost:8080/posts/new" class="new">click here and create a new post</a>
+    <a href="/posts/new" class="new">create a new post</a>
     
 </body>
 </html>

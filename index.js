@@ -1,6 +1,6 @@
 const express= require("express"); 
 const app=express();
-const port=8080;
+const port = process.env.PORT || 8080;
 const path=require("path");
 
 // we have installed uuid from npm so that we can get unique id for every post

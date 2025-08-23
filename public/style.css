@@ -129,3 +129,59 @@ body{
     gap: 20px;   /* spacing between "see" and "edit" */
 }
 
+@media (max-width: 770px) {
+    .quara{
+        width: 100%;
+        max-width: 900px;
+        background-color: rgb(205, 117, 55); 
+        margin: auto; 
+        text-align: center; 
+        font-size: 2rem;
+    }
+    .text{
+        padding-top: 0px;
+        font-size: 17px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .content{
+        margin-bottom: 1px;
+        color: #6f6c6c;
+        margin-left: 20px;
+    }   
+    .edit_{
+        font-size: 0.8rem;
+        text-decoration: none;
+        background-color: #c1d9ea;
+        padding: 1px 1px;
+    }
+    .see{
+        text-decoration: none;
+        /* font-size: 24px; */
+        font-size: 0.8rem;
+        padding: 1px 1px;
+        background-color: #c1d9ea;
+    }   
+    .new{
+        text-decoration: none;
+        /* font-size: 30px; */
+        font-size: 0.9rem;
+        margin-left: 12%;
+        /* color: rgb(243, 243, 245); */
+        color: #0588e5;
+        background-color: rgb(230, 201, 201);
+        padding: 2px 2px;
+        width:17%;
+    }   
+    .btns{
+        display: flex;
+        flex-direction: row;
+        margin-left: 1%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        gap: 35px;
+    }
+}

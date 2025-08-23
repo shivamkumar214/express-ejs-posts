@@ -1,0 +1,66 @@
+body{
+    /* display: flex; */
+    background-color: #090a0b;
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+    min-height: 100vh;        
+    margin: 0; 
+}
+
+.edit_div{
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    height: 550px;
+    
+    background-color: rgb(116, 66, 162);
+}
+.form{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+h1{
+    font-size: 50px;
+    color: rgb(253, 254, 254);
+    /* text-decoration: underline; */
+    margin: 2px;
+}
+.hrtag{
+    margin-top: 0;
+    width: 600px;
+    font-weight: 1000;
+}
+.username{
+    font-size: 24px;
+    font-weight: 1000;
+    
+    width: 300px;
+    height: 45px;
+    border-radius: 7px;
+    padding-left: 6px;
+}
+.content{
+    font-size: 18px;
+    font-weight: 100;
+    border-radius: 7px;
+    padding-left: 6px;
+}
+.btns_new{
+border: 2px solid black;
+
+    margin-top: 20px;
+    width: 150px;
+    font-size: 23px;
+    border-radius: 7px;
+    background-color: #28d02e;
+    color: white;
+
+}

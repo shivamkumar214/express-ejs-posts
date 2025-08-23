@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New POSTS</title>
+    <link rel="stylesheet" href="/new_style.css">
+</head>
+<body>
+  
+  <div class="edit_div">
+    <h1>Create New Posts</h1>
+    <hr class="hrtag">
+    <!-- post methon : so that data secure and get by app.post only not by app.get -->
+    <form method="post" action="/posts" class="form">
+        <br><br>
+        
+        <!-- name of inputs should be same as post keys -->
+        <input type="text" name="username" placeholder="Enter the username" class="username"/>
+        <br><br>
+        <textarea rows="5" cols="50" name="content" placeholder="write the post" class="content"></textarea>
+        <br>
+        <button type="submit" class="btns_new" >submit post</button>
+
+        <!-- req.query store the submitted data -->
+    </form>
+  </div>
+</body>
+</html>

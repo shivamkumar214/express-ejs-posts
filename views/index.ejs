@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL POSTS</title>
+
+    <!-- link css file to this ejs file same as with html -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <div class="container-full">
+    <h1 class="quara">   Quara Posts   </h1>
+    <% for(let post of posts) { %>
+        <div class="posts">
+          <div class="text">
+            <h2 class="user">@<%= post.username %> </h2>
+            <h3 class="content"><%= post.content %> </h3>
+            <br>
+          </div>
+
+          <div class="btns">
+            <div class="left-btns">
+                <a href="http://localhost:8080/posts/<%=post.id%>" class="see">see is detail</a>
+                <a href="http://localhost:8080/posts/<%=post.id%>/edit" class="edit_">edit</a>
+              </div>
+
+              <form method="post" action="/posts/<%=post.id%>?_method=DELETE"> 
+                <button class="delete_style">Delete</button>
+              </form>
+            </div>
+        </div>
+    <% } %>
+  </div>
+
+    <!-- this achore tag redirect your page to /posts/new  -->
+    <br>
+    <br>
+    <a href="http://localhost:8080/posts/new" class="new">click here and create a new post</a>
+    
+</body>
+</html>

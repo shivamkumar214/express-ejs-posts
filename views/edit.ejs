@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit the post</title>
+
+    <!-- link css file to this ejs file same as with html -->
+    <link rel="stylesheet" href="/edit_style.css">
+</head>
+<body>
+    
+    <!-- we have to install new package method-override so that we can change the content fro edit button,
+         this package will override on priviously written text and provide priority to new content -->
+
+    <div class="edit_div">
+        <h1> Edit the post </h1>
+        <p class="id">Post ID: <%= post.id %></p>
+        <p class="username">Post Username: @<%= post.username %></p>
+
+        <form method="post" action="/posts/<%=post.id%>?_method=PATCH" class="form" >
+            <!-- name ="content" mean we are passing textarea content to index.js so that we can access it  -->
+            <textarea rows="10" cols="55" name="content" class="content" placeholder="Enter the New content"> <%= post.content %> </textarea>
+            <button type="submit" class="btn" >submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

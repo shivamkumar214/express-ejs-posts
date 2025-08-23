@@ -22,8 +22,8 @@
 
           <div class="btns">
               <div class="left-btns">
-                <a href="/posts/<%= post.id %>">see in detail</a>
-                <a href="/posts/<%= post.id %>/edit">edit</a>
+                <a href="/posts/<%= post.id %>" class="see">see in detail</a>
+                <a href="/posts/<%= post.id %>/edit" class="edit_">edit</a>
               </div>
               <form method="post" action="/posts/<%= post.id %>?_method=DELETE"> 
                   <button class="delete_style">Delete</button>

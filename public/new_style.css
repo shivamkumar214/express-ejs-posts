@@ -54,13 +54,28 @@ h1{
     padding-left: 6px;
 }
 .btns_new{
-border: 2px solid black;
-
+    border: 2px solid black;
+    padding: 2px 1px;
     margin-top: 20px;
     width: 150px;
     font-size: 23px;
     border-radius: 7px;
     background-color: #28d02e;
     color: white;
+}
 
+
+@media (max-width: 770px) {
+    .edit_div{
+        display: flex;
+        flex-direction: column;
+        /* margin: auto; */
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        /* max-width: 700px; */
+        height: 550px;
+    
+        background-color: rgb(116, 66, 162);
+    }
 }

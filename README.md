@@ -20,28 +20,8 @@ A **mini blog-like application** where users can create, view, edit, and delete 
 - **EJS** – Embedded JavaScript templating engine  
 - **HTML/CSS** – Frontend templates  
 
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/shivamkumar214/express-ejs-posts.git
-
-2. Navigate to the project folder:
-
-  cd express-ejs-posts
-
-3. Install dependencies:
-
-  npm install
-
-4. Start the server:
-
-  npm start
-
-5. Open your browser and go to:
-
-  http://localhost:3000
-
+## 🚀 Live Demo
+Check out the project here: [Express EJS Posts](https://express-ejs-posts.onrender.com)
 
 Usage
 · Navigate to the homepage to see all posts.

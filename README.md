@@ -24,14 +24,17 @@ A **mini blog-like application** where users can create, view, edit, and delete 
 Check out the project here: [Express EJS Posts](https://express-ejs-posts.onrender.com)
 
 Usage
+
 · Navigate to the homepage to see all posts.
 . Click Create Post to add a new post.
 · Click Edit on a post to modify it.
 · Click Delete to remove a post.
 · Click on a post title to view its details.
+
 Notes
 . This project stores posts only in memory, so all data will be lost when the server restarts.
 · Perfect for learning Node.js, Express, and EJS templating.
+
 License
 This project is open source and available under the MIT License .
 
